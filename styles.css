@@ -1,16 +1,15 @@
-/* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Raleway:wght@400;600;700&display=swap');
-
 body {
-  font-family: 'Raleway', sans-serif; /* Applied imported font */
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Header background color */
+/* Changed header background color to baby pink */
 header {
-  background-color: #ff00c3; /* Baby pink */
-  color: white;
+  background-color: #ffefff; /* Light pink background */
+  /* Baby pink */
+  color: #ff0066;
   padding: 1rem;
   position: fixed;
   width: 100%;
@@ -23,13 +22,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #ff0066;
 }
 
 .nav-brand a {
-  color: white;
+  color: #ff0066;
   text-decoration: none;
   font-size: 1.5rem;
-  font-weight: 700; /* Bold font weight for branding */
 }
 
 nav ul {
@@ -37,6 +36,7 @@ nav ul {
   display: flex;
   margin: 0;
   padding: 0;
+  color: #ff0066;
 }
 
 nav ul li {
@@ -44,22 +44,19 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #ff0066;
   text-decoration: none;
   padding: 1rem;
-  font-size: 1rem;
-  font-weight: 400; /* Regular weight for nav links */
 }
 
 nav ul li a:hover {
-  background-color: #ff6fe0;
-  border-radius: 5px; /* Optional: Add rounded corners on hover */
+  background-color: #e7d7e7;
 }
 
 .apni-heading {
   text-align: center;
+  color: #ff0066;
 }
-
 section {
   padding: 4rem 2rem;
   margin-top: 4rem;
@@ -70,10 +67,15 @@ nav ul li:last-child a {
 }
 
 #home {
-  background: url('download.webp') no-repeat center center/cover;
-  color: white;
+  background: url('download.webp') no-repeat center center/cover; /* Update the path to your local image */
+  color: #a23460;
   text-align: center;
   height: 400px;
+  font-size: 50px;
+}
+
+.card-text {
+  color: #ff0066;
 }
 
 #services {
@@ -86,7 +88,7 @@ nav ul li:last-child a {
   margin-bottom: 3rem; /* Space between rows */
 }
 
-/* Card styles */
+/* Existing card styles */
 .card {
   background-color: white;
   border: 1px solid #ddd;
@@ -101,25 +103,17 @@ nav ul li:last-child a {
   transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow */
 }
 
+/* Hover state for cards */
+.card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
 .card img {
   width: 100%;
   height: 150px; /* Fixed height for the images */
   object-fit: cover;
   border-bottom: 1px solid #ddd;
   margin-bottom: 1rem;
-}
-
-.card:hover {
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
-}
-
-#about {
-  background-color: #fff;
-  text-align: center;
-}
-
-.apna-para {
-  justify-content: center;
 }
 
 /* New section styling */
@@ -148,26 +142,21 @@ nav ul li:last-child a {
   padding: 1rem 2rem;
   font-size: 1.2rem;
   color: white;
-  background-color: #ff00c3; /* Baby pink */
+  background-color: #ff0066;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
 }
 
 .call-button:hover {
-  background-color: #ff6fe0; /* Slightly darker pink on hover */
+  background-color: #ff006664; /* Slightly darker pink on hover */
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .service-row {
-    flex-direction: column; /* Stack cards vertically on mobile */
-    align-items: center; /* Center cards horizontally */
-  }
+#about {
+  background-color: #fff;
+  text-align: center;
+}
 
-  .card {
-    width: 100%; /* Full width for cards on mobile */
-    max-width: none; /* Remove max-width constraint */
-    margin-bottom: 1rem; /* Space between cards */
-  }
+.apna-para {
+  justify-content: center;
 }
